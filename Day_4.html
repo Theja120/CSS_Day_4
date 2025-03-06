@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="data:image/png;base64,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">
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary);
+        }
+
+        :root{
+            --primary:black;
+            --secondary: whitesmoke;
+        }
+
+        th:nth-child(even){
+            background-color: var(--primary);
+        }
+
+        td:nth-child(odd){
+            background-color: var(--primary);
+        }
+
+        th:nth-child(odd){
+            background-color: var(--secondary);
+        }
+
+        td:nth-child(even){
+            background-color: var(--secondary);
+        }
+
+        th:hover{
+            color: blue;
+        }
+        td:hover{
+            color: blue;
+        }
+
+        th:nth-child(even){
+            color: blue;
+            
+        }
+
+        td:nth-child(odd){
+            color: blue;
+        }
+        table {
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <table border="1" width="50vw" height="70vh" cellpadding="15"> 
+
+       <th><i class="fa-solid fa-chess-rook"></i></th><!--odd-->
+       <th><i class="fa-solid fa-chess-knight" style="color: #cad3e2;"></i></th>
+       <th><i class="fa-solid fa-chess-bishop"></i></th>
+       <th><i class="fa-solid fa-chess-queen" style="color: #cad3e2;"></i></th>-
+       <th><i class="fa-solid fa-chess-king"></i></th>
+       <th><i class="fa-solid fa-chess-bishop" style="color: #cad3e2;"></i></th>-
+       <th><i class="fa-solid fa-chess-knight"></i></th>
+       <th><i class="fa-solid fa-chess-rook" style="color: #cad3e2;"></i></th>-
+
+       <tr><!--even-->
+        <td><i class="fa-solid fa-chess-pawn" style="color: #cad3e2;"></i></td>-
+        <td><i class="fa-solid fa-chess-pawn"></i></td>
+        <td><i class="fa-solid fa-chess-pawn" style="color: #cad3e2;"></i></td>-
+        <td><i class="fa-solid fa-chess-pawn"></i></td>
+        <td><i class="fa-solid fa-chess-pawn" style="color: #cad3e2;"></i></td>-
+        <td><i class="fa-solid fa-chess-pawn"></i></td>
+        <td><i class="fa-solid fa-chess-pawn" style="color: #cad3e2;"></i></td>-
+        <td><i class="fa-solid fa-chess-pawn"></i></td>
+       </tr>
+
+
+       <th></th><!--odd-->
+       <th></th>
+       <th></th>
+       <th></th>
+       <th></th>
+       <th></th>
+       <th></th>
+       <th></th>
+
+
+       <tr><!--even-->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       </tr>
+
+
+       <th></th><!--odd-->
+       <th></th>
+       <th></th>
+       <th></th>
+       <th></th>
+       <th></th>
+       <th></th>
+       <th></th>
+
+
+       <tr><!--even-->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       </tr>
+
+
+       <th><i class="fa-solid fa-chess-pawn"></i></th><!--odd-->
+       <th><i class="fa-solid fa-chess-pawn" style="color: #cad3e2;"></i></th>-
+       <th><i class="fa-solid fa-chess-pawn"></i></th>
+       <th><i class="fa-solid fa-chess-pawn" style="color: #cad3e2;"></i></th>-
+       <th><i class="fa-solid fa-chess-pawn"></i></th>
+       <th><i class="fa-solid fa-chess-pawn" style="color: #cad3e2;"></i></th>-
+       <th><i class="fa-solid fa-chess-pawn"></i></th>
+       <th><i class="fa-solid fa-chess-pawn" style="color: #cad3e2;"></i></th>-
+
+
+       <tr id="lastrow"><!--even-->
+        <td><i class="fa-solid fa-chess-rook" style="color: #cad3e2;"></i></td>-
+        <td><i class="fa-solid fa-chess-knight"></i></td>
+        <td><i class="fa-solid fa-chess-bishop" style="color: #cad3e2;"></i></td>-
+        <td><i class="fa-solid fa-chess-king"></i></td>
+        <td><i class="fa-solid fa-chess-queen" style="color: #cad3e2;"></i></td>-
+        <td><i class="fa-solid fa-chess-bishop"></i></td>
+        <td><i class="fa-solid fa-chess-knight" style="color: #cad3e2;"></i></td>-
+        <td><i class="fa-solid fa-chess-rook"></i></td>
+       </tr>
+
+    </table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
